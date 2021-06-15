@@ -1,23 +1,27 @@
 const hamburger = document.querySelector('#btnHamburger');
 const header = document.querySelector(".header");
+const body = document.querySelector("body");
 const overlay = document.querySelector('.overlay');
+const fadeElems = document.querySelectorAll('.has-fade');
 
 btnHamburger.addEventListener('click', function() {
     if (header.classList.contains('open')) { //close humburger menu
         header.classList.remove('open');
-        overlay.classList.remove('fade-in');
-        overlay.classList.add('fade-out');
-        console.log('open hamburger : overlay close');
+        body.classList.remove("noscroll");
+        fadeElems.forEach(function(element){
+            element.classList.remove('fade-in');
+            element.classList.add('fade-out');
+        });
 
-
-
-    } else { // open hamburger menu
+    } 
+    else
+     { 
+        // open hamburger menu
+        body.classList.add("noscroll");
         header.classList.add('open');
-        overlay.classList.remove('fade-out');
-        overlay.classList.add('fade-in');
-        console.log('open hamburger: overlay open');
-
-
-
+        fadeElems.forEach(function(element){
+            element.classList.remove('fade-out');
+            element.classList.add('fade-in');
+        });
     }
 })
