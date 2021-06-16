@@ -19,23 +19,63 @@ body {
     color: $grayishBlue;
     font-weight: 300;
 
+    @include breakpoint-up(large){
+        font-size:$font-med;
+    }
 
     &.noscroll{
         overflow: hidden;
     }
 }
 
+h1,h2,h3{
+    margin: 0;
+}
 a,
 a:visited,
 a:hover {
     text-decoration: none;
 }
-// spacing
+// spacing settings
 // top and bottom 0
-// left and right 1.5rem 
+// left and right 1.5rem  not for this
 .container{
-    padding: 0 1.5rem;
+    max-width: 69.375rem;
+    margin: 0 auto;
+   
+    &--pall{
+        padding-top: 2.5rem;
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+        padding-bottom: 2.5rem;
+
+    }
+
+    &--py{
+        padding-top:2.25rem;
+        padding-bottom:2.25rem;
+
+    }
+    &--px{
+        padding-top:2.25rem
+    }
+    &--pt{
+        padding-top:2.25rem
+    }
+    &--pt{
+        padding-top:2.25rem;
+    }
+    &--pr{
+        padding-right:1.5rem;
+    }
+    &--pl{
+        padding-top:1.5rem;
+    }
+    &--pb{
+        padding-top:2.25rem;
+    }
 }
+
 
 //flexbox
 .flex {
@@ -56,6 +96,7 @@ a:hover {
 //buttoons
 button,
 .button {
+    display: inline-block;
     padding: 0.875rem 2.875rem;
     background: linear-gradient(to right, $lineGreen, $brigntCyan);
     border-radius: 50px;
@@ -63,6 +104,13 @@ button,
     color: $white;
     cursor: pointer;
     font-weight: 400;
+    font-size: $font-sm;
+    color: $white;
+    transition: opacity 300ms ease-in-out;
+    &:hover {
+        opacity: 0.75;
+    }
+
 }
 
 .hide-for-mobile {
