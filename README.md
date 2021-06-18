@@ -1,6 +1,6 @@
 ﻿## A simple landing page site fully responsive 🎉
  
- ### Design from Frontend Mentor  -- https://www.frontendmentor.io/ 📸
+ ### Design from Frontend Mentor 📸
  
  ### Coded by Me 🙂💻 
  
