@@ -152,7 +152,7 @@ button,
 .button {
     display: inline-block;
     padding: 0.875rem 2.875rem;
-    background: linear-gradient(to right, $lineGreen, $brigntCyan);
+    background: linear-gradient(to right, $limeGreen, $brigntCyan);
     border-radius: 50px;
     border: 0;
     color: $white;
@@ -161,8 +161,11 @@ button,
     font-size: $font-sm;
     color: $white;
     transition: opacity 300ms ease-in-out;
+
+    
     &:hover {
         opacity: 0.75;
+
     }
 
 }
