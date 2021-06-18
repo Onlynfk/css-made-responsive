@@ -1,8 +1,10 @@
-﻿## css-made-responsive
+﻿## A simple landing page site fully responsive 🎉
  
  ### Design from Frontend Mentor 📸
  
- ### Coded by Me 🙂💻
+ ### Coded by Me 🙂💻 
+ 
+
  
  ### Tutored by <a href ="https://www.youtube.com/c/TheCoderCoder/featured">The Coder Coder</a> 💕
 
