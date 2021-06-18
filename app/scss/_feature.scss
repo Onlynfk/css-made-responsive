@@ -8,7 +8,7 @@
     }
     &__intro{
         margin-bottom: 3.65rem; // if needed for more text - guture proff
-
+        
         @include breakpoint-up(large){
             width: 55%;
 
